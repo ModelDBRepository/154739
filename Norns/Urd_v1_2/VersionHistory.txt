@@ -1,0 +1,9 @@
+--- Version 1.1 ---
+New features:
+- A new type of neurons is introduced: Poisson neurons fire spikes according to a prescribed rate.
+- Leaky Integrate 'n' Fire neurons now show actual spikes in the time series of their membrane potentials.
+- Skuld preset file: after running a simulation, SkuldSet.mat is generated, which can be opened within Skuld to study the simulation results.
+
+
+--- Version 1.0 ---
+Urd is born: many features missing but many bugs included.

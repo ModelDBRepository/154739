@@ -1,0 +1,4 @@
+--- Version 1.1 ---
+Bug fixes:
+- Fixed a memory leak in the integration scheme. Simulations now run at merely constant memory footprint
+

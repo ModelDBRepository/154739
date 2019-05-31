@@ -1,0 +1,61 @@
+--- Version 2.2 ---
+
+New features:
+- Added a demo script, Izhikevich.m, that runs a simulation in an Izhikevich network and produces a preset file Example.mat for Skuld.
+- Verdandi network architecture supports ASCII format, in order to make the more advanced features easier accessible.
+- Skuld can now be started from command line with a preset file as optional argument. This file will be loaded directly into the GUI.
+
+Bug fixes:
+- While reading an network of an invalid machine format, no warning/error message was generated.
+- Filters did not function properly when EEG/LFP was provided as time-series without duration specified.
+- Fixed a bug that would cause an error upon opening and closing data-loader if SpikeTimes were selected in the 'Spike data' tab.
+- Support added for *.txt files in file selectors.
+- Threshold behavior in Vm2NeuronSpikes is modified so that only events 'larger than' are accepted instead of '>='.
+- For Population -> Firing rates: pressing the cancel button will not pop up the second dialog anymore.
+- For Population -> Firing rates: multiple spikes in a single bin are now processed correctly.
+
+
+--- Version 2.1 ---
+
+New features:
+- The inter-spike interval distribution and auto-spectrum of a spike train can now be determined.
+- Added possibility to apply filters to mean membrane potential.
+- Option to select the machine-format for reading binary files.
+- Faster reading speed for large network files.
+- Spike time files can be formatted more universal.
+
+Bug fixes:
+- An error would be generated upon drawing empty pie charts
+
+
+--- Version 2.0 ---
+
+New features:
+- New interface for loading data.
+- Reads much more formats of data.
+- Extended panel with cell information.
+- Menu bar reorganized.
+- Many more?
+
+Bug fixes:
+- Fixed a bug that would cause an error when only one cell type was used
+
+
+--- Version 1.5 ---
+
+New features:
+- Plots of EEG and membrane potential can now be filtered using low- and high-pass Butterworth filters. The order and cut-off frequency of the filters can chosen arbitrarily.
+- Raster plots can now be corrected for transmission delay of action potentials.
+
+Bug fixes:
+- Fixed a bug that would crash the DataLoader whenever 'Save and Close' was chosen from the 'File' menu.
+- The Linked View could not be turned off without getting errors.
+
+
+--- Version 1.4 ---
+
+New features:
+-
+
+Bug fixes:
+- Mean Vm now actually plots the mean membrane potential of whole populations instead of the membrane potential of the first couple neurons.
